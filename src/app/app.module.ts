@@ -18,7 +18,8 @@ import { RojonyComponent } from './rojony/rojony.component';
     ContactComponent,
     LoginComponent,
     LogoutComponent,
-    RojonyComponent
+    RojonyComponent,
+   
   ],
   imports: [
     BrowserModule,

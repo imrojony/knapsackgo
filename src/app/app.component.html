@@ -13,10 +13,10 @@
           <a href="help.html" class="nav-link">help</a>
         </li>
         <li class="nav-item">
-          <a href="login.html" class="nav-link">log in</a>
+          <a href="login.html" class="nav-link" data-toggle="modal" data-target="#logInModal">log in</a>
         </li>
         <li class="nav-item">
-          <a href="singup.html" class="nav-link">sign up</a>
+          <a href="singup.html" class="nav-link" data-toggle="modal" data-target="#signUpModal">sign up</a>
         </li>
         <li class="nav-item">
           <a href="singup.html" class="nav-link btn btn-outline-success">Become a Traveler</a>
@@ -108,34 +108,67 @@
       </div>
     </nav>
     <!--log in -->
-    <section id="login" class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4"></div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title text-center">Log in to continue</h4>
-              <a href="" class="btn btn-block btn-primary"><i class="fa fa-facebook-f"></i> find the on facebook</a>
-              <div class="form-group mt-2">
-                <input type="Gmail" placeholder="Gmail address" class="form-control">
-              </div>
-              <div class="form-group mt-2">
-                  <input type="password" placeholder="password" class="form-control">
-                </div>
-                <a href="" class="btn btn-block text-left"><i class="fa fa-cut"></i> remember me </a>
-                <a href="" class="btn btn-block btn-success">log in me</a>
-                
-                <a href="" class="btn btn-block text-left">forgot password?</a>
-                
-                  <a href="" class="btn btn-block text-left"> sing up Account</a>
+        <!-- The Modal -->
+        <div class="modal fade" id="logInModal">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">  
+                        <div class="card">
+                          <div class="card-body">
+                            <h4 class="card-title text-center">Log in to continue</h4>
+                            <a href="" class="btn btn-block btn-primary"><i class="fa fa-facebook-f"></i> find the on facebook</a>
+                            <div class="form-group mt-2">
+                              <input type="Gmail" placeholder="Gmail address" class="form-control">
+                            </div>
+                            <div class="form-group mt-2">
+                                <input type="password" placeholder="password" class="form-control">
+                              </div>
+                              <a href="" class="btn btn-block text-left"><i class="fa fa-cut"></i> remember me </a>
+                              <a href="" class="btn btn-block btn-success">log in me</a>
+                              
+                              <a href="" class="btn btn-block text-left">forgot password?</a>
+                              
+                                <a href="" class="btn btn-block text-left"> sing up Account</a>
+                          </div>
+                                
+                        </div>   
             </div>
-            <hr>         
           </div>
-          
         </div>
-        <div class="col-md-4"></div>
-      </div>
-      </div>
-
-    </section>
+         <!--sign up -->
+        <!-- The Modal -->
+        <div class="modal fade" id="signUpModal">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">  
+                          <div class="card">
+                            <div class="card-body">
+                              <h4 class="card-title text-center">sign up to continue</h4>
+                              <a href="" class="btn btn-block btn-primary"><i class="fa fa-facebook-f"></i> find the on facebook</a>
+                              <div class="form-group mt-2">
+                                  <input type="text" placeholder="Full name " class="form-control">
+                                </div>
+                              <div class="form-group mt-2">
+                                <input type="Gmail" placeholder="Gmail address" class="form-control">
+                              </div>
+                              <div class="form-group mt-2">
+                                  <input type="password" placeholder="password" class="form-control">
+                                </div>
+                                <a href="" class="btn btn-block text-left"><i class="fa fa-cut"></i> remember me </a>
+                                <a href="" class="btn btn-block btn-success">log Up me</a>
+                                
+                                <a href="" class="btn btn-block text-left">forgot password?</a>
+                                
+                                  <a href="" class="btn btn-block text-left"> sing up Account</a>
+                                  
+                            </div>
+                                  
+                          </div>   
+              </div>
+              
+            </div>
+            
+          </div>
+        
+   
+      
