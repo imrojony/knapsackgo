@@ -34,7 +34,7 @@
 <!--products-->
 <section id="products" class="py-5">
   <div class="container">
-      <h2 class=" text-center">Cyber Monday deals with 70% off!</h2>
+      <h2 class=" text-center">{{title}}</h2>
       <h3 class="text-center">Curated by</h3>
     <div class="row mt-5">
       <div class="col-md-4">
@@ -118,7 +118,7 @@
   </section>
 <!--showcase-->
 <section id="showcase" class="py-5">
-  <h2 class="text-center mb-5">Amazon Cyber Week Deals</h2>
+  <h2 class="text-center mb-5">{{weekDeals}}</h2>
     <div class="container">
       <div class="row">
         <div class="col-md-4">
@@ -354,6 +354,8 @@
     </div>
     <br>
     <hr>
+    <button (click)="romony=!romony"> click me</button>
+    {{romony}}
     
 
         

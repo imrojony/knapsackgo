@@ -5,11 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './rojony.component.html',
   styleUrls: ['./rojony.component.scss']
 })
-export class RojonyComponent implements OnInit {
+export class RojonyComponent{
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+ public title='habijabi';
+ public rojony =true;
 }

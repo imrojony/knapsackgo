@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'knapsackgo';
+
+
+  constructor() { 
+    console.log('hello word form app component');
+  }
+
+  
 }
