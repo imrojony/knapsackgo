@@ -11,4 +11,7 @@ export class DataService {
     getWeekProduct(){
         return this.http.get('/assets/data/weekDealsProduct.json');
     }
+    getCaruselProduct(){
+        return this.http.get('/assets/data/caruselProduct.json');
+    }
 }

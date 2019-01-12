@@ -6,5 +6,6 @@ export interface Product{
     Price:number,
     Save:number,
     ShortDescirption:string,
+    Rating:number
  
 }

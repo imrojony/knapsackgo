@@ -90,6 +90,7 @@
     </div>
 
   </section>
+  {{caruselProduct | json}}
   <!--carusel slide-->
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -100,7 +101,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="row">
-              <div class="col-md-3 ">
+               <div class="col-md-3" *ngFor="let p of caruselProduct ">
                   <div class="card">
                     <i class="fa fa-heart float-right"></i>
                   <img src="assets/img/9pic.jpg" alt="">
@@ -110,84 +111,11 @@
                       <i class="fa fa-star"></i>
                       <i class="fa fa-star"></i>
                 </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <i class="fa fa-heart float-right"></i>
-                    <img src="assets/img/10pic.jpg" alt="">zr
-                    </div>
-                    <p>August Smart Lock Pro, 3rd Generation - Silver, Works with Alexa</p>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <i class="fa fa-heart float-right"></i>
-                    <img src="assets/img/10pic.jpg" alt="">
-                    </div>
-                    <p>August Smart Lock Pro, 3rd Generation - Silver, Works with Alexa</p>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <i class="fa fa-heart float-right"></i>
-                    <img src="assets/img/12pic.jpg" alt="">
-                    </div>
-                    <p>August Smart Lock Pro, 3rd Generation - Silver, Works with Alexa</p>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                </div>
+    
+               
           </div>
         </div>
-        <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-3 ">
-                <div class="card">
-                  <i class="fa fa-heart float-right"></i>
-                <img src="assets/img/9pic.jpg" alt="">
-                </div>
-                <p>August Smart Lock Pro, 3rd Generation - Silver, Works with Alexa</p>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-              </div>
-              <div class="col-md-3">
-                  <div class="card">
-                      <i class="fa fa-heart float-right"></i>
-                  <img src="assets/img/10pic.jpg" alt="">
-                  </div>
-                  <p>August Smart Lock Pro, 3rd Generation - Silver, Works with Alexa</p>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-              </div>
-              <div class="col-md-3">
-                  <div class="card">
-                      <i class="fa fa-heart float-right"></i>
-                  <img src="assets/img/10pic.jpg" alt="">
-                  </div>
-                  <p>August Smart Lock Pro, 3rd Generation - Silver, Works with Alexa</p>
-                  
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-              </div>
-              <div class="col-md-3">
-                  <div class="card">
-                      <i class="fa fa-heart float-right"></i>
-                  <img src="assets/img/12pic.jpg" alt="">
-                  </div>
-                  <p>August Smart Lock Pro, 3rd Generation - Silver, Works with Alexa</p>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-              </div>
-            
-            </div>
-          </div>
+       
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -200,8 +128,5 @@
     </div>
     <br>
     <hr>
-    <button (click)="romony=!romony"> click me</button>
-    {{romony}}
     
-
         
