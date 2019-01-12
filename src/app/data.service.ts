@@ -5,7 +5,10 @@ import { HttpClient } from "@angular/common/http";
 export class DataService {
     constructor(private http: HttpClient){}
 
-    getProducts(){
+    getProducts() {
         return this.http.get('/assets/data/products.json');
+    }
+    getWeekProduct(){
+        return this.http.get('/assets/data/weekDealsProduct.json');
     }
 }

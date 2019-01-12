@@ -11,7 +11,8 @@ import { DataService } from 'src/app/data.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent  {
-  public products: Product[]=[];
+  products: Product[]=[];
+  weekDealsProduct: Product[]=[];
   public title='Cyber Monday deals with 70% off!';
   public weekDeals='Amazon Cyber Week Deals';
   public romony =true;
@@ -19,8 +20,16 @@ export class HomeComponent  {
 
     this.dataService.getProducts().subscribe( 
       res => {
-        console.log(res);
+        this.products =  JSON.parse(JSON.stringify(res));
+      });
+
+    this.dataService.getWeekProduct().subscribe(
+      res=>{
+        this. weekDealsProduct= JSON.parse(JSON.stringify(res));
+        console.log(this.weekDealsProduct);
+
       }
+
     )
   }
 
