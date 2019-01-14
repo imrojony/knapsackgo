@@ -90,7 +90,7 @@
     </div>
 
   </section>
-  {{caruselProduct | json}}
+  
   <!--carusel slide-->
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -98,11 +98,13 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
+      
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item {{i===0? 'active': ''}}" *ngFor="let products of caruselProduct; let i = index ">
+        
           <div class="row">
-               <div class="col-md-3" *ngFor="let p of caruselProduct ">
-                  <div class="card">
+               <div class="col-md-3" *ngFor="let product of products ">
+                  <div class="card" >
                     <i class="fa fa-heart float-right"></i>
                   <img src="assets/img/9pic.jpg" alt="">
                   </div>

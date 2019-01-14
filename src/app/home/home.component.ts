@@ -34,9 +34,23 @@ export class HomeComponent  {
     );
     this.dataService.getCaruselProduct().subscribe(
       res=>{
-        this.caruselProduct= JSON.parse(JSON.stringify(res));
-        console.log(this.caruselProduct);
+        var products = JSON.parse(JSON.stringify(res));
+        const plength = products.length
+        if(plength>4){
+          const division = plength / 4
+          console.log(division)
+          let l = 0;
+          for ( var i = 0; i < division; i++ ) {
+            // This will loop 36 times
+            l+=4
+            this.caruselProduct.push(products.slice(4*i, l))
+        }
 
+        } else{
+          this.caruselProduct.push(products)
+        }
+        console.log(this.caruselProduct.length);
+        console.log(this.caruselProduct);
       }
 
     )
