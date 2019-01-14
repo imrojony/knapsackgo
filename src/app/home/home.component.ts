@@ -14,6 +14,7 @@ export class HomeComponent  {
   products: Product[]=[];
   weekDealsProduct: Product[]=[];
   caruselProduct: Product[]=[];
+  caruselProduct2: Product[]=[];
   public title='Cyber Monday deals with 70% off!';
   public weekDeals='Amazon Cyber Week Deals';
   public romony =true;
@@ -42,7 +43,7 @@ export class HomeComponent  {
           let l = 0;
           for ( var i = 0; i < division; i++ ) {
             // This will loop 36 times
-            l+=4
+            l=l+4
             this.caruselProduct.push(products.slice(4*i, l))
         }
 
@@ -53,6 +54,26 @@ export class HomeComponent  {
         console.log(this.caruselProduct);
       }
 
+    );
+    this.dataService.getCaruselProduct2().subscribe(
+      res=>{
+        var products = JSON.parse(JSON.stringify(res));
+        const plength = products.length
+        if(plength>4){
+          const division=plength/4
+        let l=0;
+        for (var i= 0; i< division; i++){
+          l=l+4
+          this.caruselProduct2.push(products.slice(4*i,l))
+        }
+
+          
+          console.log(division)
+        }else{
+          this.caruselProduct2.push(products)
+        }
+        console.log(this.caruselProduct2);
+      }
     )
 
   }

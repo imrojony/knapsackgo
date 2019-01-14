@@ -14,4 +14,7 @@ export class DataService {
     getCaruselProduct(){
         return this.http.get('/assets/data/caruselProduct.json');
     }
+    getCaruselProduct2(){
+        return this.http.get('assets/data/caruselProduct2.json')
+    }
 }
