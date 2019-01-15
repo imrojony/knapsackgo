@@ -1,0 +1,20 @@
+[
+    {
+        "image":"http://localhost:4200/assets/img/1pic.jpg",
+
+        "title":"",
+        "shortdiscription":""
+    },
+    {
+        "image":"http://localhost:4200/assets/img/2pic.jpg",
+
+        "title":"",
+        "shortdiscription":""
+    },
+    {
+        "image":"http://localhost:4200/assets/img/3pic.jpg",
+
+        "title":"",
+        "shortdiscription":""
+    }
+]
