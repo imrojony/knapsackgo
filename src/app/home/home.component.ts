@@ -16,6 +16,7 @@ export class HomeComponent  {
   caruselProduct: Product[]=[];
   caruselProduct2: Product[]=[];
   CaruselProduct1: Product[]=[];
+  CaruselProduct3: Product[]=[];
   public title='Cyber Monday deals with 70% off!';
   public weekDeals='Amazon Cyber Week Deals';
   public romony =true;
@@ -81,6 +82,12 @@ export class HomeComponent  {
         this.CaruselProduct1= JSON.parse(JSON.stringify(res));
         console.log(res)
       });
+      this .dataService .getCaruselProduct3().subscribe(
+        res=>{
+          this. CaruselProduct3= JSON.parse(JSON.stringify (res));
+          console.log(res)
+        }
+      );
 
   }
   
