@@ -23,4 +23,7 @@ export class DataService {
     getCaruselProduct3(){
         return this.http.get('assets/data/CaruselProduct3.json');
     }
+    getMenu(){
+        return this.http.get('assets/data/Menu.json');
+    }
 }

@@ -1,7 +1,7 @@
 import { Title } from "@angular/platform-browser";
 
 export interface Product{
-    Title:string
+    Title:string,
     Image:string,
     Price:number,
     Save:number,
@@ -9,3 +9,4 @@ export interface Product{
     Rating:number
  
 }
+

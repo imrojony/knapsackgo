@@ -4,6 +4,7 @@ import { RojonyComponent } from '../rojony/rojony.component';
 import { Condition } from 'selenium-webdriver';
 import { Product } from 'src/model/product';
 import { DataService } from 'src/app/data.service';
+import { Menu } from 'src/model/Menu';
 
 @Component({
   selector: 'app-home',
@@ -17,6 +18,7 @@ export class HomeComponent  {
   caruselProduct2: Product[]=[];
   CaruselProduct1: Product[]=[];
   CaruselProduct3: Product[]=[];
+  
   public title='Cyber Monday deals with 70% off!';
   public weekDeals='Amazon Cyber Week Deals';
   public romony =true;
@@ -88,6 +90,8 @@ export class HomeComponent  {
            console.log(res)
          }
        );
+
+      
 
   }
   

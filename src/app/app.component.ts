@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Menu } from 'src/model/Menu';
+import { DataService } from './data.service';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +9,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'knapsackgo';
+  menu: Menu;
+  
+
+  constructor(private dataService: DataService) {
 
 
-  constructor() { 
-    console.log('hello word form app component');
+    this.dataService.getMenu().subscribe(
+      res=>{
+        this.menu=JSON.parse(JSON.stringify(res));
+        console.log(res)
+      }
+
+    )
   }
 
   
