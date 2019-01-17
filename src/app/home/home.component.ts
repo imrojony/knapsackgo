@@ -82,12 +82,12 @@ export class HomeComponent  {
         this.CaruselProduct1= JSON.parse(JSON.stringify(res));
         console.log(res)
       });
-      this .dataService .getCaruselProduct3().subscribe(
-        res=>{
-          this. CaruselProduct3= JSON.parse(JSON.stringify (res));
-          console.log(res)
-        }
-      );
+       this.dataService.getCaruselProduct3().subscribe(
+         res=>{
+           this.CaruselProduct3=JSON.parse(JSON.stringify (res));
+           console.log(res)
+         }
+       );
 
   }
   
