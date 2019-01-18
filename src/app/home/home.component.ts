@@ -5,6 +5,7 @@ import { Condition } from 'selenium-webdriver';
 import { Product } from 'src/model/product';
 import { DataService } from 'src/app/data.service';
 import { Menu } from 'src/model/Menu';
+import { SocialLink } from 'src/model/SocialLink';
 
 @Component({
   selector: 'app-home',
@@ -18,6 +19,8 @@ export class HomeComponent  {
   caruselProduct2: Product[]=[];
   CaruselProduct1: Product[]=[];
   CaruselProduct3: Product[]=[];
+  socialLink:SocialLink;
+  
   
   public title='Cyber Monday deals with 70% off!';
   public weekDeals='Amazon Cyber Week Deals';
@@ -90,6 +93,12 @@ export class HomeComponent  {
            console.log(res)
          }
        );
+       this.dataService.getSocialLink().subscribe(
+        res=>{
+          this.socialLink=JSON.parse(JSON.stringify(res));
+          console.log(res)
+        }
+      );
 
       
 

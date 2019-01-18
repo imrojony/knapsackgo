@@ -13,7 +13,7 @@
     <div class="carousel-inner ">
       <div class="carousel-item  {{i===0? 'active': ''}}" *ngFor="let slider of CaruselProduct1; let i=index">
       
-        <img src="{{slider.image}}" alt="Los Angeles" width="1100" height="500">
+        <img src="{{slider?.image}}" alt="Los Angeles" width="1100" height="500">
       </div>
       
     </div>
@@ -37,11 +37,11 @@
       <div class="col-md-4" *ngFor='let product of products'>
         <div class="card " >
           <div class="card-body">
-            <img src="{{product.Image}}" class="img-thumbnail" alt="">
-            <h3>{{product.Title}} </h3>
-            <p>৳{{product.Price}}</p>
-            <p>Save{{product.Save}}BDT</p>
-            <p class="lead">{{product.ShortDescirption}}</p>
+            <img src="{{product?.Image}}" class="img-thumbnail" alt="">
+            <h3>{{product?.Title}} </h3>
+            <p>৳{{product?.Price}}</p>
+            <p>Save{{product?.Save}}BDT</p>
+            <p class="lead">{{product?.ShortDescirption}}</p>
           </div>
           <a href="" class="btn btn-block btn-success ">see this deal </a>
         </div>
@@ -59,11 +59,11 @@
           <div class="col-md-4 mb-4" *ngFor='let product of weekDealsProduct'>
               <div class="card " >
                 <div class="card-body">
-                  <img src="{{product.Image}}" class="img-thumbnail" alt="">
-                  <h3>{{product.Title}} </h3>
-                  <p>৳{{product.Price}}</p>
-                  <p>Save{{product.Save}}BDT</p>
-                  <p class="lead">{{product.ShortDescirption}}</p>
+                  <img src="{{product?.Image}}" class="img-thumbnail" alt="">
+                  <h3>{{product?.Title}} </h3>
+                  <p>৳{{product?.Price}}</p>
+                  <p>Save{{product?.Save}}BDT</p>
+                  <p class="lead">{{product?.ShortDescirption}}</p>
             </div>
             <a href="" class="btn btn-block btn-success ">see this deal </a>
           </div>
@@ -178,7 +178,7 @@
     <div class="carousel-inner ">
       <div class="carousel-item {{i===0? 'active': ''}} " *ngFor="let slider of CaruselProduct3; let i=index">
       
-        <img src="{{slider.image}}" alt="Los Angeles" width="1100" height="500">
+        <img src="{{slider?.image}}" alt="Los Angeles" width="1100" height="500">
       </div>
       
     </div>

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Menu } from 'src/model/Menu';
 import { DataService } from './data.service';
+import { SocialLink } from 'src/model/SocialLink';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,8 @@ import { DataService } from './data.service';
 export class AppComponent {
   title = 'knapsackgo';
   menu: Menu;
+  socialLink:SocialLink;
+  
   
   
 
@@ -22,13 +25,17 @@ export class AppComponent {
         console.log(res)
       }
 
-    ),
-    this.dataService.getButton().subscribe(
+    );
+    this.dataService.getSocialLink().subscribe(
       res=>{
-        this.Button=JSON.parse(JSON.stringify(res));
+        this.socialLink=JSON.parse(JSON.stringify(res));
+        console.log(res)
       }
     )
+    
+    
+    
   }
 
-  
+
 }
