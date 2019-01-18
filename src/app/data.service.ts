@@ -26,4 +26,7 @@ export class DataService {
     getMenu(){
         return this.http.get('assets/data/Menu.json');
     }
+    getButton(){
+        return this.http.get('assets/data/Button.json');
+    }
 }

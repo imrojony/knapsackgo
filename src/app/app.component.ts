@@ -11,6 +11,7 @@ export class AppComponent {
   title = 'knapsackgo';
   menu: Menu;
   
+  
 
   constructor(private dataService: DataService) {
 
@@ -21,6 +22,11 @@ export class AppComponent {
         console.log(res)
       }
 
+    ),
+    this.dataService.getButton().subscribe(
+      res=>{
+        this.Button=JSON.parse(JSON.stringify(res));
+      }
     )
   }
 

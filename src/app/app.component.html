@@ -31,42 +31,34 @@
       <div class="row">
         <div class="col-md-3">
           <h2>backpack</h2>
-            <ul class="list-group">
-                <li class="list-group-item fa fa-star">Cras justo odio</li>
+            <ul class="list-group" *ngFor='let item of menu.Backpack'>
+                <li class="list-group-item fa {{item.Icon}}">{{item.Name}}</li>
               </ul>
               <a href="" class="btn btn-outline-success mt-4 "> <i class="fa fa-facebook-f"></i> find the on facebook</a>
               
         </div>
+     
         <div class="col-md-3">
           <h2>Travel</h2>
-            <ul class="list-group">
-                <li class="list-group-item fa fa-heart">Cras justo odio</li>
-                <li class="list-group-item fa fa-at">Dapibus ac facilisis in</li>
-                <li class="list-group-item fa fa-asterisk">Morbi leo risus</li>
-                <li class="list-group-item fa fa-automobile">Porta ac consectetur ac</li>
-                <li class="list-group-item fa fa-heart">Vestibulum at eros</li>
+            <ul class="list-group" *ngFor='let item of menu.Travel'>
+                <li class="list-group-item fa {{item.Icon}}">{{item.Name}}</li>
+                
               </ul>
               
               
         </div>
         <div class="col-md-3">
           <h2>Account</h2>
-           <ul class="list-group">
-            <li class="list-group-item fa fa-asterisk">Cras justo odio</li>
-            <li class="list-group-item fa fa-asterisk">Dapibus ac facilisis in</li>
-            <li class="list-group-item fa fa-asterisk">Morbi leo risus</li>
-            <li class="list-group-item fa fa-automobile">Porta ac consectetur ac</li>
-            <li class="list-group-item fa fa-heart">Vestibulum at eros</li>
+           <ul class="list-group"*ngFor='let item of menu.Account'>
+            <li class="list-group-item fa {{item.Icon}}">{{item.Name}}</li>
+            
           </ul>
         </div>
         <div class="col-md-3">
           <h2>Help</h2>
-            <ul class="list-group">
-                <li class="list-group-item fa fa-star">Cras justo odio</li>
-                <li class="list-group-item fa fa-asterisk">Dapibus ac facilisis in</li>
-                <li class="list-group-item fa fa-asterisk">Morbi leo risus</li>
-                <li class="list-group-item fa fa-automobile">Porta ac consectetur ac</li>
-                <li class="list-group-item fa fa-heart">Vestibulum at eros</li>
+            <ul class="list-group"*ngFor='let item of menu.Help'>
+                <li class="list-group-item fa {{item.Icon}}">{{item.Name}}</li>
+                
               </ul>
         </div>
       </div>
