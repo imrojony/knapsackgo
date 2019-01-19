@@ -3,6 +3,7 @@ import { Menu } from 'src/model/Menu';
 import { DataService } from './data.service';
 import { SocialLink } from 'src/model/SocialLink';
 import { FooterNavbar } from 'src/model/footerNavber';
+import { NavigationBar } from 'src/model/navigationBar';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ export class AppComponent {
   menu: Menu;
   socialLink:SocialLink[] =[];
   footerNavbar:FooterNavbar[]=[];
+  navigationBar:NavigationBar[]=[];
   
   
   
@@ -37,6 +39,11 @@ export class AppComponent {
     this.dataService.getFooterNavbar().subscribe(
       res=>{
         this .footerNavbar=JSON.parse(JSON.stringify(res));
+      }
+    );
+    this.dataService.getNavigationBar().subscribe(
+      res=>{
+        this.navigationBar=JSON.parse(JSON.stringify(res));
       }
     )
     

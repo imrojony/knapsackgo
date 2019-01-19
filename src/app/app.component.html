@@ -9,22 +9,15 @@
     </form>
     <div>
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a href="help.html" class="nav-link">help</a>
-        </li>
-        <li class="nav-item">
-          <a href="login.html" class="nav-link" data-toggle="modal" data-target="#logInModal">log in</a>
-        </li>
-        <li class="nav-item">
-          <a href="singup.html" class="nav-link" data-toggle="modal" data-target="#signUpModal">sign up</a>
-        </li>
-        <li class="nav-item">
-          <a href="singup.html" class="nav-link btn btn-outline-success">Become a Traveler</a>
+        <li class="nav-item" *ngFor='let item of navigationBar'>
+          <a href="{{item.Url}}" class="nav-link">{{item.Lable}}</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+
+
 <router-outlet></router-outlet>
 <section id="footer" class="py-5">
     <div class="container">

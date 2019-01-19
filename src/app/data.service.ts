@@ -32,6 +32,9 @@ export class DataService {
     getFooterNavbar(){
         return this.http.get('assets/data/footerNavbar.json')
     }
+    getNavigationBar(){
+        return this.http.get('assets/data/navigationBar.json')
+    }
   
 
   
