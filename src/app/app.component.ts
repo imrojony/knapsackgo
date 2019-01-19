@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Menu } from 'src/model/Menu';
 import { DataService } from './data.service';
 import { SocialLink } from 'src/model/SocialLink';
+import { FooterNavbar } from 'src/model/footerNavber';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,8 @@ import { SocialLink } from 'src/model/SocialLink';
 export class AppComponent {
   title = 'knapsackgo';
   menu: Menu;
-  socialLink:SocialLink;
+  socialLink:SocialLink[] =[];
+  footerNavbar:FooterNavbar[]=[];
   
   
   
@@ -30,6 +32,11 @@ export class AppComponent {
       res=>{
         this.socialLink=JSON.parse(JSON.stringify(res));
         console.log(res)
+      }
+    );
+    this.dataService.getFooterNavbar().subscribe(
+      res=>{
+        this .footerNavbar=JSON.parse(JSON.stringify(res));
       }
     )
     

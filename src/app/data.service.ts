@@ -29,6 +29,9 @@ export class DataService {
     getSocialLink(){
         return this.http.get('assets/data/SocialLink.json');
     }
+    getFooterNavbar(){
+        return this.http.get('assets/data/footerNavbar.json')
+    }
   
 
   

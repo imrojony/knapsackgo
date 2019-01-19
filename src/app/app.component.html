@@ -34,7 +34,8 @@
             <ul class="list-group" *ngFor='let item of menu?.Backpack'>
                 <li class="list-group-item fa {{item?.Icon}}">{{item?.Name}}</li>
               </ul>
-              <a href="" class="btn btn-outline-success mt-4 "> <i class="fa fa-facebook-f"></i> find the on facebook</a>
+            
+              <a href="" class="btn btn-outline-success mt-4 "> <i class="fa {{socialLink[0].Icon}}"></i> {{socialLink[0].Label}}</a>
               
         </div>
      
@@ -68,35 +69,22 @@
   </section>
   <br>
   <hr>
-  {{socialLink | json}}
+  
+  
   <!--footer navigation-->
   <nav class="navbar navbar-light  navbar-expand-md ">
       <div class="container" >
         <div>
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="help.html" class="nav-link">Care </a>
+            <li class="nav-item" *ngFor='let item of footerNavbar'>
+              <a href="{{ item.Url}}" class="nav-link">{{item.Label}} </a>
             </li>
-            <li class="nav-item">
-              <a href="login.html" class="nav-link">  About</a>
-            </li>
-            <li class="nav-item">
-              <a href="singup.html" class="nav-link">   Terms</a>
-            </li>
-            <li class="nav-item">
-                <a href="singup.html" class="nav-link">Site Max</a>
-                    
-              </li>
-              <li class="nav-item">
-                  <a href="singup.html" class="nav-link"> Max</a>
-                      
-                </li>
-
+            
           </ul>
         </div>
       </div>
     </nav>
-    {{SocialLink | json}}
+   
     <!--log in -->
         <!-- The Modal -->
         <div class="modal fade" id="logInModal">

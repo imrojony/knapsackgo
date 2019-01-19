@@ -1,0 +1,9 @@
+[
+    
+        {"Label":"Care","Url":"help.html"},
+        {"Label":"About","Url":"login.html"},
+        {"Label":"Terms","Url":"singup.html"},
+        {"Label":"Site Max","Url":"singup.htm"},
+        {"Label":"Max","Url":"singup.htm"}
+ 
+]

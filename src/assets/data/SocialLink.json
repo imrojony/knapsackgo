@@ -1,8 +1,8 @@
 [
     {
-        "Name":"Facebook","label":"Find on the facebook","url":"","Icon":"fa-facebook"
+        "Name":"Facebook","Label":"Find on the facebook","Url":"","Icon":"fa-facebook"
     },
     {
-        "Name":"Amazon","label":"Amazon weel deals","url":"","Icon":""
+        "Name":"Amazon","Label":"Amazon weel deals","Url":"","Icon":""
     }
 ]
