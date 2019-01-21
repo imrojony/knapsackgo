@@ -16,19 +16,12 @@ export class AppComponent {
   socialLink:SocialLink[] =[];
   footerNavbar:FooterNavbar[]=[];
   navigationBar:NavigationBar[]=[];
-  
-  
-  
-
   constructor(private dataService: DataService) {
-
-
     this.dataService.getMenu().subscribe(
       res=>{
         this.menu=JSON.parse(JSON.stringify(res));
         console.log(res)
       }
-
     );
     this.dataService.getSocialLink().subscribe(
       res=>{
@@ -45,7 +38,7 @@ export class AppComponent {
       res=>{
         this.navigationBar=JSON.parse(JSON.stringify(res));
       }
-    )
+    );
     
     
     

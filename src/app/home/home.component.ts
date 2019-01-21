@@ -6,6 +6,7 @@ import { Product } from 'src/model/product';
 import { DataService } from 'src/app/data.service';
 import { Menu } from 'src/model/Menu';
 import { SocialLink } from 'src/model/SocialLink';
+import { Categories } from 'src/model/categories';
 
 @Component({
   selector: 'app-home',
@@ -20,6 +21,7 @@ export class HomeComponent  {
   CaruselProduct1: Product[]=[];
   CaruselProduct3: Product[]=[];
   socialLink:SocialLink;
+  categories:Categories;
   
   
   public title='Cyber Monday deals with 70% off!';
@@ -99,6 +101,13 @@ export class HomeComponent  {
           console.log(res)
         }
       );
+      this.dataService.getCategories().subscribe(
+        res=>{
+          this.categories=JSON.parse(JSON.stringify(res));
+          console.log(res)
+        }
+      )
+
 
       
 

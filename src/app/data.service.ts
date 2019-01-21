@@ -30,12 +30,14 @@ export class DataService {
         return this.http.get('assets/data/SocialLink.json');
     }
     getFooterNavbar(){
-        return this.http.get('assets/data/footerNavbar.json')
+        return this.http.get('assets/data/footerNavbar.json');
     }
     getNavigationBar(){
-        return this.http.get('assets/data/navigationBar.json')
+        return this.http.get('assets/data/navigationBar.json');
     }
-  
+  getCategories(){
+      return this.http.get('assets/data/categories.json')
+  }
 
   
    

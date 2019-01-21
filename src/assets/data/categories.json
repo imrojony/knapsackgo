@@ -1,0 +1,35 @@
+{
+    "LeftLeft":[
+        {"Label":"Bluetooth and wireless speakers","Url":""},
+        {"Label":"Cell phones and accessories","Url":""},
+        {"Label":"Powerbanks","Url":""},
+        {"Label":"E-Readers","Url":""},
+        {"Label":"Action figures","Url":""},
+        {"Label":"Watch","Url":""}
+    ],
+    "LeftRight":[
+        {"Label":"Bluetooth and wireless speakers","Url":""},
+        {"Label":"Cell phones and accessories","Url":""},
+        {"Label":"Powerbanks","Url":""},
+        {"Label":"E-Readers","Url":""},
+        {"Label":"Action figures","Url":""},
+        {"Label":"Watch","Url":""}
+    ],
+    "RightLeft":[
+        {"Label":"Bluetooth and wireless speakers","Url":""},
+        {"Label":"Cell phones and accessories","Url":""},
+        {"Label":"Powerbanks","Url":""},
+        {"Label":"E-Readers","Url":""},
+        {"Label":"Action figures","Url":""},
+        {"Label":"Watch","Url":""}
+    ],
+    "RightRight":[
+
+        {"Label":"Bluetooth and wireless speakers","Url":""},
+        {"Label":"Cell phones and accessories","Url":""},
+        {"Label":"Powerbanks","Url":""},
+        {"Label":"E-Readers","Url":""},
+        {"Label":"Action figures","Url":""},
+        {"Label":"Watch","Url":""}
+    ]
+}

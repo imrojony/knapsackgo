@@ -191,29 +191,43 @@
       <span class="carousel-control-next-icon"></span>
     </a>
   </div>
+<!--Most Popular Categories-->
 
-
-
-  <!--Most Popular Categories-->
- <div id="section">
-   <div class="row">
-     <div class="col-2-md">
-       <img src="http://localhost:4200/assets/img/3pic.jpg" alt=""> 
-       <div class="row">
-         <div class="col-2-md">
-
-         </div>
-         <div class="col-2-md">
-
-         </div>
-       </div>
-
-     </div>
-     <div class="col-2-md">
-        <img src="http://localhost:4200/assets/img/3pic.jpg" alt="">
- 
+<div id="section">
+<div class="container">
+    <div class="row ">
+      <div class="col-md-6 py-3 bg-right">
+        <div class="row">
+          <div class="col-6 mt-3" >
+            <ul>
+              <li class="link" *ngFor='let item of categories.LeftLeft'>
+                  <a href="{{item.Url}}">{{item.Label}}</a>
+              </li>
+            </ul>   
+          </div>
+          <div class="col-6 mt-3">
+            <ul><li class="link" *ngFor='let item of categories.LeftRight'>
+              <a href="{{item.Url}}">{{item.Label}}</a>
+              </li></ul>
+          </div>
+        </div>
       </div>
-
-   </div>
-
- </div>
+      <div class="col-md-6 bg-left p-1 ">
+        <div class="row">
+          <div class="col-6 mt-3">
+            <ul><li class="link" *ngFor='let item of categories.RightLeft'>
+              <a href="{{item.Url}}">{{item.Label}}</a></li></ul>
+                
+              
+          </div>
+          <div class="col-6 mt-3">
+            <ul><li class="link" *ngFor='let item of categories.RightRight '><a href="{{item.Url}}">{{item.Label}}</a></li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+        
+ 
