@@ -23,11 +23,23 @@
   }  
 }
 #carouselExampleControls{
+    margin-top: 20px;
+    height: 200px;
+    h3{
+        font-size: 27px;
+        font-weight: 700px;
+
+
+    }
+
     .carousel-indicators{
-        width: 3px !important;
-        height: 3px !important;
-        background-color: black !important;
-        border-radius: 50%
+        li{
+            width: 10px !important;
+            height: 10px !important;
+            background-color: black !important;
+            border-radius: 100%
+        }
+       
     }
     img{
             
