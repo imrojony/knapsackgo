@@ -200,14 +200,14 @@
         <div class="row">
           <div class="col-6 mt-3" >
             <ul>
-              <li class="link" *ngFor='let item of categories.LeftLeft'>
-                  <a href="{{item.Url}}">{{item.Label}}</a>
+              <li class="link" *ngFor='let item of categories?.LeftLeft'>
+                  <a href="{{item?.Url}}">{{item.Label}}</a>
               </li>
             </ul>   
           </div>
           <div class="col-6 mt-3">
-            <ul><li class="link" *ngFor='let item of categories.LeftRight'>
-              <a href="{{item.Url}}">{{item.Label}}</a>
+            <ul><li class="link" *ngFor='let item of categories?.LeftRight'>
+              <a href="{{item?.Url}}">{{item.Label}}</a>
               </li></ul>
           </div>
         </div>
@@ -216,20 +216,20 @@
       <div class="col-md-6 bg-left p-1">
         <div class="row">
           <div class="col-6 mt-3">
-            <ul><li class="link" *ngFor='let item of categories.RightLeft'>
-              <a href="{{item.Url}}">{{item.Label}}</a></li></ul>
+            <ul><li class="link" *ngFor='let item of categories?.RightLeft'>
+              <a href="{{item?.Url}}">{{item?.Label}}</a></li></ul>
                 
               
           </div>
           <div class="col-6 mt-3">
-            <ul><li class="link" *ngFor='let item of categories.RightRight '><a href="{{item.Url}}">{{item.Label}}</a></li></ul>
+            <ul><li class="link" *ngFor='let item of categories?.RightRight '><a href="{{item.Url}}">{{item.Label}}</a></li></ul>
           </div>
         </div>
       </div>
     </div>
   </div>
   </div>
-  {{slider| json}}
+
   <!--carusel2-->
   <div class="container mt-5 ">
     <div class="row">
@@ -242,25 +242,21 @@
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
          <!-- Indicators -->
      <ul class="carousel-indicators">
-        <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleControls" data-slide-to="1"></li>
-        <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+        <li  data-target="#carouselExampleControls" attr.data-slide-to="{{j}}" class="{{j===0? 'active':''}}"  *ngFor="let indicator of caruselTestimonials; let j=index"></li>
+        
       </ul>
           <div class="carousel-inner">
-            <div class="carousel-item {{i===0? 'active': ''}} "*ngFor="let slider of CaruselProduct4; let i=index">
+            <div class="carousel-item {{i===0? 'active': ''}} " *ngFor="let slider of caruselTestimonials; let i=index">
                 <blockquote class="lead">
-                    Best way to bring products to home. 
-                    I can't imagine any other possible option other than them.Within 16 days I
-                     got my product. 
-                    Loved their service.
+                    {{slider?.Shortdiscription}}
                 </blockquote>
                   <div class="row">
                     <div class="col-3">
-                      <img class="img-circle" src="assets/img/17pic.jpg" alt="First slide">
+                      <img class="img-circle" src="assets/img/{{slider?.Image}}" alt="First slide">
                     </div>
                     <div class="col-9">
-                      <strong>Strong text</strong>
-                      <p>ackpack Shopper</p>
+                      <strong>{{slider?.Strong}}</strong>
+                      <p>{{slider?.P}}</p>
                     </div>
                   </div>
               

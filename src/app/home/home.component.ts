@@ -7,6 +7,7 @@ import { DataService } from 'src/app/data.service';
 import { Menu } from 'src/model/Menu';
 import { SocialLink } from 'src/model/SocialLink';
 import { Categories } from 'src/model/categories';
+import { CaruselTestimonial } from 'src/model/caruselTestimonial';
 
 @Component({
   selector: 'app-home',
@@ -22,7 +23,7 @@ export class HomeComponent  {
   CaruselProduct3: Product[]=[];
   socialLink:SocialLink;
   categories:Categories;
-  CaruselProduct4:Product[]=[];
+   caruselTestimonials:CaruselTestimonial[]=[];
   
   
   public title='Cyber Monday deals with 70% off!';
@@ -108,9 +109,10 @@ export class HomeComponent  {
           console.log(res)
         }
       );
-      this.dataService.getCaruselProduct4().subscribe(
+      this.dataService.getCaruselTestimonial().subscribe(
         res=>{
-          this.CaruselProduct4=JSON.parse(JSON.stringify(res));
+          this.caruselTestimonials=JSON.parse(JSON.stringify(res));
+          console.log(this.caruselTestimonials);
         }
       )
 
