@@ -22,6 +22,7 @@ export class HomeComponent  {
   CaruselProduct3: Product[]=[];
   socialLink:SocialLink;
   categories:Categories;
+  CaruselProduct4:Product[]=[];
   
   
   public title='Cyber Monday deals with 70% off!';
@@ -105,6 +106,11 @@ export class HomeComponent  {
         res=>{
           this.categories=JSON.parse(JSON.stringify(res));
           console.log(res)
+        }
+      );
+      this.dataService.getCaruselProduct4().subscribe(
+        res=>{
+          this.CaruselProduct4=JSON.parse(JSON.stringify(res));
         }
       )
 

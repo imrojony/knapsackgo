@@ -38,6 +38,9 @@ export class DataService {
   getCategories(){
       return this.http.get('assets/data/categories.json')
   }
+  getCaruselProduct4(){
+      return this.http.get('assets/data/caruselProduct4.json')
+  }
 
   
    

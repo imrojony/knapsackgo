@@ -229,10 +229,13 @@
     </div>
   </div>
   </div>
+  {{slider| json}}
   <!--carusel2-->
-  <div class="continer"></div>
+  <div class="container mt-5 ">
     <div class="row">
-    <div class="col-md-6"></div>
+    <div class="col-md-6">
+      <iframe width="100%" height="300" src="https://www.youtube.com/embed/6X5GeI6w8tc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
   <div class="col-md-6">
     <h3>What customers and press say about Backpack</h3>
     
@@ -244,7 +247,7 @@
         <li data-target="#carouselExampleControls" data-slide-to="2"></li>
       </ul>
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item {{i===0? 'active': ''}} "*ngFor="let slider of CaruselProduct4; let i=index">
                 <blockquote class="lead">
                     Best way to bring products to home. 
                     I can't imagine any other possible option other than them.Within 16 days I
@@ -262,46 +265,14 @@
                   </div>
               
             </div>
-            <div class="carousel-item">
-                <blockquote>
-                    Best way to bring products to home. 
-                    I can't imagine any other possible option other than them.Within 16 days I
-                     got my product. 
-                    Loved their service.
-                </blockquote>
-                  <div class="row">
-                    <div class="col-3">
-                      <img class="img-circle" src="assets/img/18pic.jpg" alt="First slide">
-                    </div>
-                    <div class="col-9">
-                        <strong>Strong text</strong>
-                        <p>ackpack Shopper</p>
-                    </div>
-                  </div>
-               
-            </div>
-            <div class="carousel-item">
-                <blockquote>
-                    Best way to bring products to home. 
-                    I can't imagine any other possible option other than them.Within 16 days I
-                     got my product. 
-                    Loved their service.
-                </blockquote>
-                  <div class="row">
-                    <div class="col-3">
-                      <img class="img-circle" src="assets/img/18pic.jpg" alt="First slide">
-                    </div>
-                    <div class="col-9">
-                        <strong>Strong text</strong>
-                        <p>ackpack Shopper</p>
-                    </div>
-                  </div>
-              
-            </div>
+          
+           
           </div>
           
         </div>
       </div>
+    </div>
+  
                  
      
 
