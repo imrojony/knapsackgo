@@ -1,7 +1,7 @@
 [
     {
         "CatogoryName":"Him",
-        "Img":"",
+        "Img":"him.png",
         "url":"",
         "ProductCallection":[
 
@@ -88,7 +88,7 @@
     },
     {
         "CatogoryName":"Her",
-        "Img":"",
+        "Img":"her.png",
         "url":"",
         "ProductCallection":[
 
@@ -175,13 +175,13 @@
     },
     {
         "CatogoryName":"Friends",
-        "Img":"",
+        "Img":"friend.png",
         "url":"",
         "ProductCallection":[
 
             {
                 "Title": "Google Pixel Unlocked 64GB - Clearly White",
-                "Image": "http://localhost:4200/assets/img/6pic.jpg",
+                "Image": "http://localhost:4200/assets/img/22pic.jpg",
                 "Price": 1234,
                 "Save":123,
                 "ShortDescirption": "Google Pixel 3 at best price in Bangladesh!"
@@ -262,13 +262,13 @@
     },
     {
         "CatogoryName":"Kids",
-        "Img":"",
+        "Img":"kid.png",
         "url":"",
         "ProductCallection":[
 
             {
                 "Title": "Google Pixel Unlocked 64GB - Clearly White",
-                "Image": "http://localhost:4200/assets/img/6pic.jpg",
+                "Image": "http://localhost:4200/assets/img/21pic.jpg",
                 "Price": 1234,
                 "Save":123,
                 "ShortDescirption": "Google Pixel 3 at best price in Bangladesh!"
@@ -349,13 +349,100 @@
     },
     {
         "CatogoryName":"Coworkers",
-        "Img":"",
+        "Img":"pet.png",
         "url":"",
         "ProductCallection":[
 
             {
                 "Title": "Google Pixel Unlocked 64GB - Clearly White",
-                "Image": "http://localhost:4200/assets/img/6pic.jpg",
+                "Image": "http://localhost:4200/assets/img/19pic.jpg",
+                "Price": 1234,
+                "Save":123,
+                "ShortDescirption": "Google Pixel 3 at best price in Bangladesh!"
+                 },
+                 {
+                    "Title": "Google Pixel Unlocked 64GB - Clearly White",
+                    "Image": "http://localhost:4200/assets/img/6pic.jpg",
+                    "Price": 1234,
+                    "Save":123,
+                    "ShortDescirption": "Google Pixel 3 at best price in Bangladesh!"
+                     },
+                     {
+                        "Title": "Google Pixel Unlocked 64GB - Clearly White",
+                        "Image": "http://localhost:4200/assets/img/6pic.jpg",
+                        "Price": 1234,
+                        "Save":123,
+                        "ShortDescirption": "Google Pixel 3 at best price in Bangladesh!"
+                         },
+                         {
+                            "Title": "Google Pixel Unlocked 64GB - Clearly White",
+                            "Image": "http://localhost:4200/assets/img/6pic.jpg",
+                            "Price": 1234,
+                            "Save":123,
+                            "ShortDescirption": "Google Pixel 3 at best price in Bangladesh!"
+                             },
+                             {
+                                "Title": "Google Pixel Unlocked 64GB - Clearly White",
+                                "Image": "http://localhost:4200/assets/img/6pic.jpg",
+                                "Price": 1234,
+                                "Save":123,
+                                "ShortDescirption": "Google Pixel 3 at best price in Bangladesh!"
+                                 },
+                                 {
+                                    "Title": "Google Pixel Unlocked 64GB - Clearly White",
+                                    "Image": "http://localhost:4200/assets/img/6pic.jpg",
+                                    "Price": 1234,
+                                    "Save":123,
+                                    "ShortDescirption": "Google Pixel 3 at best price in Bangladesh!"
+                                     },
+                                     {
+                                        "Title": "Google Pixel Unlocked 64GB - Clearly White",
+                                        "Image": "http://localhost:4200/assets/img/6pic.jpg",
+                                        "Price": 1234,
+                                        "Save":123,
+                                        "ShortDescirption": "Google Pixel 3 at best price in Bangladesh!"
+                                         },
+                                         {
+                                            "Title": "Google Pixel Unlocked 64GB - Clearly White",
+                                            "Image": "http://localhost:4200/assets/img/6pic.jpg",
+                                            "Price": 1234,
+                                            "Save":123,
+                                            "ShortDescirption": "Google Pixel 3 at best price in Bangladesh!"
+                                             },
+                                             {
+                                                "Title": "Google Pixel Unlocked 64GB - Clearly White",
+                                                "Image": "http://localhost:4200/assets/img/6pic.jpg",
+                                                "Price": 1234,
+                                                "Save":123,
+                                                "ShortDescirption": "Google Pixel 3 at best price in Bangladesh!"
+                                                 },
+                                                 {
+                                                    "Title": "Google Pixel Unlocked 64GB - Clearly White",
+                                                    "Image": "http://localhost:4200/assets/img/6pic.jpg",
+                                                    "Price": 1234,
+                                                    "Save":123,
+                                                    "ShortDescirption": "Google Pixel 3 at best price in Bangladesh!"
+                                                     },
+                                                     {
+                                                        "Title": "Google Pixel Unlocked 64GB - Clearly White",
+                                                        "Image": "http://localhost:4200/assets/img/6pic.jpg",
+                                                        "Price": 1234,
+                                                        "Save":123,
+                                                        "ShortDescirption": "Google Pixel 3 at best price in Bangladesh!"
+                                                         }
+
+        ]
+
+    },
+    {
+        "CatogoryName":"Coworkers",
+        "Img":"coworker.png",
+        "url":"",
+        "ProductCallection":[
+
+            {
+                "Title": "Google Pixel Unlocked 64GB - Clearly White",
+                "Image": "http://localhost:4200/assets/img/20pic.jpg",
                 "Price": 1234,
                 "Save":123,
                 "ShortDescirption": "Google Pixel 3 at best price in Bangladesh!"

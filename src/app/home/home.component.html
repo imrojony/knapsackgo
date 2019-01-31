@@ -268,6 +268,41 @@
         </div>
       </div>
     </div>
+    <!--ValentineDayGift product-->
+    <section id="valentineDayGift">
+      <h3 class="text-center">Valentine's Day Gifts</h3>
+      <div class="row">
+        <div (click)="getProductsByCat(item)" class="col-md-2" *ngFor='let item of valentineDayGift' >
+         
+          <img src="assets/img/{{item.Img}}" alt="">
+          <p class="text-center">{{item.CatogoryName}}</p>
+        </div>
+       
+  
+      </div>
+      <div class="container">
+        <h3 class="text-center">{{valentineDayGiftItem?.CatogoryName}}</h3>
+      <div class="row">
+          <div class="col-md-4" *ngFor='let product of valentineDayGiftItem?.ProductCallection'>
+            <div class="card " >
+              <div class="card-body">
+                <img src="{{product?.Image}}" class="img-thumbnail" alt="">
+                <h3>{{product?.Title}} </h3>
+                <p>৳{{product?.Price}}</p>
+                <p>Save{{product?.Save}}BDT</p>
+                <p class="lead">{{product?.ShortDescirption}}</p>
+              </div>
+              <a href="" class="btn btn-block btn-success ">see this deal </a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+ 
+
+
+    </section>
   
                  
      

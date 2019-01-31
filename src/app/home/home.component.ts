@@ -26,6 +26,7 @@ export class HomeComponent  {
   categories:Categories;
    caruselTestimonials:CaruselTestimonial[]=[];
    valentineDayGift:ValrntineDayGift[]=[];
+   valentineDayGiftItem:ValrntineDayGift;
   
   
   public title='Cyber Monday deals with 70% off!';
@@ -129,7 +130,9 @@ export class HomeComponent  {
 
   }
   
-
+  getProductsByCat(item) {
+    this.valentineDayGiftItem = item;
+  }
 
     
   }
