@@ -1,4 +1,5 @@
-import { Title } from "@angular/platform-browser";
+
+
 
 export interface Product{
     Title:string,
@@ -6,7 +7,8 @@ export interface Product{
     Price:number,
     Save:number,
     ShortDescirption:string,
-    Rating:number
- 
+    Rating:number,
+    URL:string,
+    
 }
 

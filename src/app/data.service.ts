@@ -41,6 +41,10 @@ export class DataService {
   getCaruselTestimonial(){
       return this.http.get('assets/data/caruselTestimonial.json')
   }
+  getValentineDayGift(){
+      return this.http.get('assets/data/valentineDayGift.json')
+  }
+
 
   
    

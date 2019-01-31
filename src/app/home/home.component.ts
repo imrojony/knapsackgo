@@ -8,6 +8,7 @@ import { Menu } from 'src/model/Menu';
 import { SocialLink } from 'src/model/SocialLink';
 import { Categories } from 'src/model/categories';
 import { CaruselTestimonial } from 'src/model/caruselTestimonial';
+import { ValrntineDayGift } from 'src/model/valentineDayGift';
 
 @Component({
   selector: 'app-home',
@@ -24,6 +25,7 @@ export class HomeComponent  {
   socialLink:SocialLink;
   categories:Categories;
    caruselTestimonials:CaruselTestimonial[]=[];
+   valentineDayGift:ValrntineDayGift[]=[];
   
   
   public title='Cyber Monday deals with 70% off!';
@@ -113,6 +115,12 @@ export class HomeComponent  {
         res=>{
           this.caruselTestimonials=JSON.parse(JSON.stringify(res));
           console.log(this.caruselTestimonials);
+        }
+      );
+      this.dataService.getValentineDayGift().subscribe(
+        res=>{
+          this.valentineDayGift=JSON.parse(JSON.stringify(res))
+          console.log('rojony',this.valentineDayGift);
         }
       )
 
