@@ -9,6 +9,7 @@ import { SocialLink } from 'src/model/SocialLink';
 import { Categories } from 'src/model/categories';
 import { CaruselTestimonial } from 'src/model/caruselTestimonial';
 import { ValrntineDayGift } from 'src/model/valentineDayGift';
+import { ValentineGift } from 'src/model/valentineGift';
 
 @Component({
   selector: 'app-home',
@@ -27,7 +28,8 @@ export class HomeComponent  {
    caruselTestimonials:CaruselTestimonial[]=[];
    valentineDayGift:ValrntineDayGift[]=[];
    valentineDayGiftItem:ValrntineDayGift;
-  
+   valentineGift:ValentineGift[]=[];
+   
   
   public title='Cyber Monday deals with 70% off!';
   public weekDeals='Amazon Cyber Week Deals';
@@ -124,6 +126,13 @@ export class HomeComponent  {
           console.log('rojony',this.valentineDayGift);
         }
       )
+      this.dataService.getValentineGift().subscribe(
+        res=>{
+          this.valentineGift=JSON.parse(JSON.stringify(res))
+          console.log(this.valentineGift);
+        }
+      )
+      
 
 
       

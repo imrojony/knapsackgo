@@ -44,6 +44,9 @@ export class DataService {
   getValentineDayGift(){
       return this.http.get('assets/data/valentineDayGift.json')
   }
+  getValentineGift(){
+      return this.http.get('assets/data/valentineGift.json')
+  }
 
 
   

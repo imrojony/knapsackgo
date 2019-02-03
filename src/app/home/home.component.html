@@ -301,28 +301,15 @@
     </section>
 
       <!--valentinedaygift-->
-      <section id="valentineGift2">
+      <section id="valentineGift">
           <h3 class="text-center">Valentine's Day Gifts</h3>
         <div class="container">
           <div class="row">
-           <div class="col-md-2">
-             <img src="assets/img/1pic.jpg" alt="">
+           <div class="col-md-2" *ngFor='let items of valentineDayGift'>
+             <img src="assets/img/{{items.Img}}" alt="">
+             <p></p>
            </div>
-           <div class="col-md-2">
-              <img src="assets/img/2pic.jpg" alt="">
-            </div>
-            <div class="col-md-2">
-                <img src="assets/img/3pic.jpg" alt="">
-              </div>
-              <div class="col-md-2">
-                  <img src="assets/img/4pic.jpg" alt="">
-                </div>
-                <div class="col-md-2">
-                    <img src="assets/img/1pic.jpg" alt="">
-                  </div>
-                  <div class="col-md-2">
-                      <img src="assets/img/2pic.jpg" alt="">
-                    </div>
+           
           </div>
         </div>
         
